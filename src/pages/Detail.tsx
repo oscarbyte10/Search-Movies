@@ -17,7 +17,7 @@ const Detail: React.FC = () => {
 
   useEffect(() => {
     fetchMovie(slug || "");
-  });
+  }, [slug]);
 
   return (
     <>
